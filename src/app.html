@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<script>
+  import { MetaTags } from 'svelte-meta-tags';
+</script>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -8,6 +11,24 @@
 		<script async defer src="#"></script>
 		%sveltekit.head%
 	</head>
+	
+ <MetaTags
+  title="Flick Master | Home"
+  titleTemplate="Movie| Flick Master"
+  description="Movies & Tv shows Recommendation Made By Your Favorite AI."
+  canonical="https://flick.nawrassedahman.tk/"
+  openGraph={{
+    url: 'https://flick.nawrassedahman.tk/',
+    title: 'Flick Master | Home',
+    description: 'Movies & Tv shows Recommendation Made By Your Favorite AI.',
+    images: [
+      {
+        url: 'https://flick.nawrassedahman.tk/favicon.png',
+        width: 800,
+        height: 600,
+        alt: 'banner'
+      } />
+	
 	<body data-sveltekit-preload-data="hover" class="bg-neutral-900 text-slate-100">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
