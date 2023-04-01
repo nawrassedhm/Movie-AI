@@ -1,17 +1,7 @@
-<!DOCTYPE html>
 <script>
   import { MetaTags } from 'svelte-meta-tags';
 </script>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<!-- Place this tag in your head or just before your close body tag. -->
-		<script async defer src="#"></script>
-		%sveltekit.head%
-	</head>
-	
+
  <MetaTags
   title="Flick Master | Home"
   titleTemplate="Movie| Flick Master"
@@ -27,10 +17,9 @@
         width: 800,
         height: 600,
         alt: 'banner'
-      } ] />
-	
-	
-	<body data-sveltekit-preload-data="hover" class="bg-neutral-900 text-slate-100">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+      }
+]
+
+/>
+
 </html>
